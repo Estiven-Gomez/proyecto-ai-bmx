@@ -1,0 +1,68 @@
+﻿/* ================================================================
+   RESET Y BASE GLOBAL
+================================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fuentes por tema */
+.ai-theme  { font-family: var(--font-body); background: var(--color-bg); color: var(--color-text); }
+.bmx-theme { font-family: var(--font-bmx-body); background: var(--color-bg); color: var(--color-text); }
+
+img, video, svg { display: block; max-width: 100%; }
+
+a { text-decoration: none; color: inherit; }
+
+ul, ol { list-style: none; }
+
+button, input, textarea, select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+button { cursor: pointer; }
+
+/* Container universal */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+/* Sección genérica */
+.section {
+  padding-block: clamp(4rem, 10vw, 7rem);
+}
+
+/* Accesibilidad: focus visible */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* Selección de texto */
+::selection { background: var(--color-primary); color: #fff; }
+
+/* Scrollbar elegante */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: var(--radius-full); }

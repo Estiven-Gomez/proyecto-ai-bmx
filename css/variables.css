@@ -1,0 +1,128 @@
+﻿/* ================================================================
+   VARIABLES GLOBALES DEL PROYECTO
+   Paleta IA: Verde + Azul + Blanco
+   Paleta BMX: Negro + Gris + Neón Verde + Azul Eléctrico
+================================================================ */
+
+:root {
+  /* ── Fuentes ── */
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+  --font-bmx-display: 'Bebas Neue', sans-serif;
+  --font-bmx-body:    'Barlow', sans-serif;
+
+  /* ── Espaciado base ── */
+  --space-xs:  0.25rem;
+  --space-sm:  0.5rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+
+  /* ── Radios ── */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-xl:   32px;
+  --radius-full: 9999px;
+
+  /* ── Sombras ── */
+  --shadow-sm:  0 2px 8px rgba(0,0,0,.08);
+  --shadow-md:  0 4px 24px rgba(0,0,0,.12);
+  --shadow-lg:  0 8px 48px rgba(0,0,0,.18);
+  --shadow-xl:  0 16px 64px rgba(0,0,0,.24);
+
+  /* ── Transiciones ── */
+  --transition-fast:   150ms ease;
+  --transition-normal: 280ms ease;
+  --transition-slow:   500ms ease;
+
+  /* ── Tamaños de contenedor ── */
+  --container-max: 1280px;
+  --container-pad: clamp(1rem, 5vw, 2.5rem);
+}
+
+/* ================================================================
+   TEMA: INTELIGENCIA ARTIFICIAL
+================================================================ */
+.ai-theme {
+  /* Colores principales IA */
+  --ai-green-100: #e6faf2;
+  --ai-green-300: #6ee7b7;
+  --ai-green-500: #10b981;
+  --ai-green-700: #047857;
+  --ai-green-900: #064e3b;
+
+  --ai-blue-100:  #eff6ff;
+  --ai-blue-300:  #93c5fd;
+  --ai-blue-500:  #3b82f6;
+  --ai-blue-700:  #1d4ed8;
+  --ai-blue-900:  #1e3a8a;
+
+  --ai-neutral-50:  #f8fafc;
+  --ai-neutral-100: #f1f5f9;
+  --ai-neutral-200: #e2e8f0;
+  --ai-neutral-400: #94a3b8;
+  --ai-neutral-600: #475569;
+  --ai-neutral-800: #1e293b;
+  --ai-neutral-900: #0f172a;
+
+  /* Semánticos */
+  --color-bg:         #ffffff;
+  --color-bg-alt:     var(--ai-neutral-50);
+  --color-bg-card:    #ffffff;
+  --color-text:       var(--ai-neutral-900);
+  --color-text-muted: var(--ai-neutral-600);
+  --color-primary:    var(--ai-green-500);
+  --color-primary-dark: var(--ai-green-700);
+  --color-secondary:  var(--ai-blue-500);
+  --color-secondary-dark: var(--ai-blue-700);
+  --color-border:     var(--ai-neutral-200);
+  --color-accent:     var(--ai-green-300);
+
+  /* Gradientes */
+  --gradient-primary: linear-gradient(135deg, var(--ai-green-500), var(--ai-blue-500));
+  --gradient-hero:    linear-gradient(160deg, #f0fdf9 0%, #eff6ff 100%);
+  --gradient-text:    linear-gradient(135deg, #10b981, #3b82f6);
+
+  /* Navbar */
+  --navbar-bg: rgba(255,255,255,.85);
+  --navbar-shadow: 0 1px 0 var(--ai-neutral-200);
+}
+
+/* ================================================================
+   TEMA: BMX FREESTYLE
+================================================================ */
+.bmx-theme {
+  /* Colores principales BMX */
+  --bmx-black:     #0a0a0a;
+  --bmx-dark:      #111111;
+  --bmx-gray-900:  #1a1a1a;
+  --bmx-gray-800:  #222222;
+  --bmx-gray-700:  #333333;
+  --bmx-gray-500:  #666666;
+  --bmx-gray-300:  #999999;
+  --bmx-white:     #f5f5f5;
+
+  --bmx-neon-green: #39ff14;
+  --bmx-neon-blue:  #00b4ff;
+  --bmx-neon-green-glow: rgba(57,255,20,.25);
+  --bmx-neon-blue-glow:  rgba(0,180,255,.25);
+
+  /* Semánticos */
+  --color-bg:         var(--bmx-black);
+  --color-bg-alt:     var(--bmx-dark);
+  --color-bg-card:    var(--bmx-gray-900);
+  --color-text:       var(--bmx-white);
+  --color-text-muted: var(--bmx-gray-300);
+  --color-primary:    var(--bmx-neon-green);
+  --color-secondary:  var(--bmx-neon-blue);
+  --color-border:     var(--bmx-gray-700);
+
+  /* Navbar BMX */
+  --navbar-bg: rgba(10,10,10,.90);
+  --navbar-shadow: 0 1px 0 var(--bmx-gray-800);
+}

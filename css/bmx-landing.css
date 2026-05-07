@@ -1,0 +1,316 @@
+﻿/* ================================================================
+   BMX FREESTYLE LANDING — ESTILOS ESPECÍFICOS
+================================================================ */
+
+/* ── HERO BMX ── */
+.bmx-hero {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.bmx-hero-bg { position: absolute; inset: 0; z-index: 0; }
+.bmx-noise {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+  opacity: .08;
+}
+.bmx-lines {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 40px,
+    rgba(255,255,255,.015) 40px,
+    rgba(255,255,255,.015) 41px
+  );
+}
+.bmx-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: .12;
+}
+.bmx-glow--green {
+  width: 600px;
+  height: 600px;
+  background: var(--bmx-neon-green);
+  top: -200px;
+  left: -200px;
+}
+.bmx-glow--blue {
+  width: 500px;
+  height: 500px;
+  background: var(--bmx-neon-blue);
+  bottom: -150px;
+  right: -150px;
+}
+
+.bmx-hero .container {
+  position: relative;
+  z-index: 1;
+  padding-block: var(--space-5xl);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bmx-hero-content { max-width: 700px; }
+
+.bmx-badge {
+  display: inline-block;
+  padding: .35rem 1rem;
+  border: 1px solid var(--bmx-neon-green);
+  border-radius: var(--radius-sm);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .15em;
+  color: var(--bmx-neon-green);
+  text-transform: uppercase;
+  margin-bottom: var(--space-xl);
+}
+
+.bmx-hero-title {
+  font-family: var(--font-bmx-display);
+  font-size: clamp(5rem, 15vw, 11rem);
+  line-height: .95;
+  margin-bottom: var(--space-2xl);
+  letter-spacing: -.02em;
+}
+.neon-text {
+  color: var(--bmx-neon-green);
+  text-shadow: 0 0 40px var(--bmx-neon-green), 0 0 80px rgba(57,255,20,.4);
+}
+.bmx-subtitle-word {
+  color: var(--bmx-white);
+  -webkit-text-stroke: 1px rgba(255,255,255,.3);
+}
+
+.bmx-hero-desc {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: var(--bmx-gray-300);
+  max-width: 520px;
+  margin-bottom: var(--space-2xl);
+}
+.bmx-hero-cta {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+/* Ticker */
+.bmx-ticker {
+  position: relative;
+  z-index: 1;
+  background: var(--bmx-neon-green);
+  color: #000;
+  padding: .6rem 0;
+  overflow: hidden;
+  font-family: var(--font-bmx-display);
+  font-size: 1rem;
+  letter-spacing: .15em;
+}
+.ticker-track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: ticker 20s linear infinite;
+}
+.ticker-track span { padding-right: 3rem; }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ── SECCIONES BMX GENÉRICAS ── */
+.bmx-section {
+  padding-block: clamp(4rem, 8vw, 7rem);
+  background: var(--bmx-dark);
+}
+.bmx-section--dark { background: var(--bmx-black); }
+
+.bmx-section-header {
+  margin-bottom: var(--space-4xl);
+}
+.bmx-section-badge {
+  display: inline-block;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--bmx-neon-green);
+  margin-bottom: var(--space-md);
+}
+.bmx-section-title {
+  font-family: var(--font-bmx-display);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1;
+  color: var(--bmx-white);
+  letter-spacing: -.01em;
+}
+
+/* ── DISCIPLINAS ── */
+.bmx-disciplines-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--bmx-gray-700);
+  border: 1px solid var(--bmx-gray-700);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.bmx-disc-card {
+  background: var(--bmx-gray-900);
+  padding: var(--space-2xl);
+  position: relative;
+  transition: background var(--transition-normal);
+}
+.bmx-disc-card:hover { background: var(--bmx-gray-800); }
+.bmx-disc-card--highlight { background: var(--bmx-gray-800); }
+.bmx-disc-num {
+  font-family: var(--font-bmx-display);
+  font-size: 3rem;
+  color: rgba(255,255,255,.07);
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  line-height: 1;
+}
+.bmx-disc-card h3 {
+  font-family: var(--font-bmx-display);
+  font-size: 1.8rem;
+  color: var(--bmx-white);
+  margin-bottom: var(--space-md);
+  letter-spacing: .02em;
+}
+.bmx-disc-card p {
+  font-size: .88rem;
+  line-height: 1.65;
+  color: var(--bmx-gray-300);
+  margin-bottom: var(--space-lg);
+}
+.bmx-disc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+.bmx-disc-tags span {
+  padding: .25rem .65rem;
+  border: 1px solid var(--bmx-gray-700);
+  border-radius: var(--radius-sm);
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: var(--bmx-neon-green);
+  text-transform: uppercase;
+}
+
+/* ── TRUCOS ── */
+.bmx-tricks-list { display: flex; flex-direction: column; }
+.bmx-trick {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  align-items: center;
+  gap: var(--space-2xl);
+  padding: var(--space-2xl) 0;
+  border-bottom: 1px solid var(--bmx-gray-800);
+  transition: background var(--transition-fast);
+}
+.bmx-trick:hover { background: rgba(255,255,255,.02); padding-inline: var(--space-xl); border-radius: var(--radius-md); }
+.trick-num {
+  font-family: var(--font-bmx-display);
+  font-size: 1.5rem;
+  color: var(--bmx-gray-700);
+  letter-spacing: .05em;
+}
+.bmx-trick h3 {
+  font-family: var(--font-bmx-display);
+  font-size: 1.8rem;
+  color: var(--bmx-white);
+  margin-bottom: var(--space-xs);
+  letter-spacing: .02em;
+}
+.trick-info p { font-size: .88rem; color: var(--bmx-gray-300); line-height: 1.6; }
+.trick-level {
+  padding: .3rem .8rem;
+  border-radius: var(--radius-sm);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.trick-level--beginner     { background: rgba(57,255,20,.1);  color: var(--bmx-neon-green); border: 1px solid rgba(57,255,20,.25); }
+.trick-level--intermediate { background: rgba(0,180,255,.1);  color: var(--bmx-neon-blue);  border: 1px solid rgba(0,180,255,.25); }
+.trick-level--advanced     { background: rgba(255,165,0,.1);  color: #ffa500;               border: 1px solid rgba(255,165,0,.25); }
+.trick-level--elite        { background: rgba(255,50,50,.1);  color: #ff5555;               border: 1px solid rgba(255,50,50,.25); }
+
+/* ── CULTURA ── */
+.bmx-culture-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+}
+.bmx-culture-card {
+  background: var(--bmx-gray-900);
+  border: 1px solid var(--bmx-gray-800);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  transition: border-color var(--transition-normal), transform var(--transition-normal);
+}
+.bmx-culture-card:hover {
+  border-color: var(--bmx-neon-green);
+  transform: translateY(-4px);
+}
+.culture-icon { font-size: 2rem; margin-bottom: var(--space-md); }
+.bmx-culture-card h3 {
+  font-family: var(--font-bmx-display);
+  font-size: 1.4rem;
+  color: var(--bmx-white);
+  margin-bottom: var(--space-sm);
+  letter-spacing: .02em;
+}
+.bmx-culture-card p { font-size: .9rem; color: var(--bmx-gray-300); line-height: 1.65; }
+
+/* ── EQUIPO ── */
+.bmx-equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+}
+.bmx-equip-item {
+  text-align: center;
+  padding: var(--space-2xl);
+  border: 1px solid var(--bmx-gray-800);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+}
+.bmx-equip-item:hover {
+  border-color: var(--bmx-neon-blue);
+  background: rgba(0,180,255,.04);
+  transform: translateY(-4px);
+}
+.equip-icon { font-size: 2.5rem; margin-bottom: var(--space-lg); }
+.bmx-equip-item h3 {
+  font-family: var(--font-bmx-display);
+  font-size: 1.4rem;
+  color: var(--bmx-white);
+  margin-bottom: var(--space-sm);
+}
+.bmx-equip-item p { font-size: .85rem; color: var(--bmx-gray-300); line-height: 1.65; }
+
+/* ── RESPONSIVE BMX ── */
+@media (max-width: 900px) {
+  .bmx-disciplines-grid { grid-template-columns: 1fr 1fr; }
+  .bmx-equipment-grid   { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .bmx-disciplines-grid { grid-template-columns: 1fr; }
+  .bmx-equipment-grid   { grid-template-columns: 1fr; }
+  .bmx-culture-grid     { grid-template-columns: 1fr; }
+  .bmx-trick { grid-template-columns: 1fr; }
+  .trick-num { display: none; }
+}

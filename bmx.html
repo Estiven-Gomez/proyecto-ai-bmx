@@ -1,0 +1,421 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BMX Freestyle Colombia — Cultura, trucos y estilo de vida sobre dos ruedas" />
+  <title>BMX Freestyle | Cultura Urbana y Deporte Extremo</title>
+
+  <!-- Google Fonts: Bebas Neue (display) + Barlow (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/components/navbar.css" />
+  <link rel="stylesheet" href="css/components/chatbot.css" />
+  <link rel="stylesheet" href="css/components/footer.css" />
+  <link rel="stylesheet" href="css/bmx-landing.css" />
+</head>
+
+<body class="bmx-theme">
+
+  <!-- ============================================================
+       NAVBAR BMX
+  ============================================================ -->
+  <nav class="navbar navbar--bmx" id="navbar" role="navigation" aria-label="Navegación BMX">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="BMX Freestyle - Inicio">
+        <span class="logo-icon bmx-icon">⬡</span>
+        <span class="logo-text">BMX <strong>Freestyle</strong></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#bmx-home"        class="nav-link active">Inicio</a></li>
+        <li><a href="#bmx-disciplines" class="nav-link">Disciplinas</a></li>
+        <li><a href="#bmx-tricks"      class="nav-link">Trucos</a></li>
+        <li><a href="#bmx-culture"     class="nav-link">Cultura</a></li>
+        <li><a href="#bmx-equipment"   class="nav-link">Equipo</a></li>
+        <li><a href="#bmx-home"         class="nav-link nav-link--alt">Top ↑</a></li>
+      </ul>
+
+      <button class="hamburger hamburger--bmx" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO BMX
+  ============================================================ -->
+  <section class="bmx-hero" id="bmx-home">
+    <!-- Fondo con textura noise + degradado oscuro -->
+    <div class="bmx-hero-bg" aria-hidden="true">
+      <div class="bmx-noise"></div>
+      <div class="bmx-lines"></div>
+      <div class="bmx-glow bmx-glow--green"></div>
+      <div class="bmx-glow bmx-glow--blue"></div>
+    </div>
+
+    <div class="container">
+      <div class="bmx-hero-content">
+        <span class="bmx-badge animate-fade-up">⬡ EXTREME SPORT · COLOMBIA</span>
+        <h1 class="bmx-hero-title animate-fade-up delay-1">
+          <span class="neon-text">BMX</span><br />
+          <span class="bmx-subtitle-word">FREESTYLE</span>
+        </h1>
+        <p class="bmx-hero-desc animate-fade-up delay-2">
+          Más que un deporte — es una cultura, un lenguaje y una forma de ver el mundo.<br />
+          Dos ruedas. Cero límites. Puro estilo.
+        </p>
+        <div class="bmx-hero-cta animate-fade-up delay-3">
+          <a href="#bmx-disciplines" class="btn btn--neon">Explorar</a>
+          <a href="#bmx-tricks"      class="btn btn--ghost">Ver Trucos</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ticker inferior -->
+    <div class="bmx-ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>PARK · STREET · FLATLAND · DIRT · VERT · TRAILS ·</span>
+        <span>PARK · STREET · FLATLAND · DIRT · VERT · TRAILS ·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DISCIPLINAS
+  ============================================================ -->
+  <section class="bmx-section" id="bmx-disciplines">
+    <div class="container">
+      <div class="bmx-section-header" data-animate="fade-up">
+        <span class="bmx-section-badge">Las modalidades</span>
+        <h2 class="bmx-section-title">DISCIPLINAS <span class="neon-text">BMX</span></h2>
+      </div>
+
+      <div class="bmx-disciplines-grid">
+
+        <div class="bmx-disc-card" data-animate="fade-up">
+          <div class="bmx-disc-num">01</div>
+          <h3>PARK</h3>
+          <p>
+            En skateparks diseñados con rampas, bowls y quarter pipes. El objetivo es enlazar
+            trucos aéreos y de borde con fluidez y altura máxima. Es la disciplina olímpica.
+          </p>
+          <div class="bmx-disc-tags">
+            <span>Olímpico</span><span>Rampas</span><span>Aéreo</span>
+          </div>
+        </div>
+
+        <div class="bmx-disc-card" data-animate="fade-up" style="animation-delay:.1s">
+          <div class="bmx-disc-num">02</div>
+          <h3>STREET</h3>
+          <p>
+            La ciudad es el skatepark. Escaleras, barras, bordillos y muros son los elementos
+            del freestyle callejero. Creatividad urbana en estado puro.
+          </p>
+          <div class="bmx-disc-tags">
+            <span>Urbano</span><span>Grind</span><span>Manual</span>
+          </div>
+        </div>
+
+        <div class="bmx-disc-card" data-animate="fade-up" style="animation-delay:.2s">
+          <div class="bmx-disc-num">03</div>
+          <h3>FLATLAND</h3>
+          <p>
+            Sobre superficie plana, el rider convierte la bicicleta en un instrumento de danza
+            mecánica. Equilibrio, precisión y habilidad técnica extrema.
+          </p>
+          <div class="bmx-disc-tags">
+            <span>Técnico</span><span>Equilibrio</span><span>Artístico</span>
+          </div>
+        </div>
+
+        <div class="bmx-disc-card" data-animate="fade-up" style="animation-delay:.3s">
+          <div class="bmx-disc-num">04</div>
+          <h3>DIRT</h3>
+          <p>
+            Pistas de tierra con rampas naturales (jumps). Los riders ejecutan trucos de altura
+            en el aire mientras surcan la tierra a gran velocidad.
+          </p>
+          <div class="bmx-disc-tags">
+            <span>Tierra</span><span>Saltos</span><span>Velocidad</span>
+          </div>
+        </div>
+
+        <div class="bmx-disc-card" data-animate="fade-up" style="animation-delay:.4s">
+          <div class="bmx-disc-num">05</div>
+          <h3>VERT</h3>
+          <p>
+            En halfpipe vertical, los riders alcanzan alturas imposibles ejecutando los trucos
+            más espectaculares del BMX, inspirados en el skateboarding.
+          </p>
+          <div class="bmx-disc-tags">
+            <span>Halfpipe</span><span>Aerial</span><span>Giro</span>
+          </div>
+        </div>
+
+        <div class="bmx-disc-card bmx-disc-card--highlight" data-animate="fade-up" style="animation-delay:.5s">
+          <div class="bmx-disc-num">06</div>
+          <h3>TRAILS</h3>
+          <p>
+            Circuitos en entornos naturales o construidos a mano. Requieren tanto habilidad
+            técnica como conexión con el entorno. Cultura pura del BMX.
+          </p>
+          <div class="bmx-disc-tags">
+            <span>Naturaleza</span><span>Comunidad</span><span>Flow</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TRUCOS DESTACADOS
+  ============================================================ -->
+  <section class="bmx-section bmx-section--dark" id="bmx-tricks">
+    <div class="container">
+      <div class="bmx-section-header" data-animate="fade-up">
+        <span class="bmx-section-badge">El lenguaje del BMX</span>
+        <h2 class="bmx-section-title">TRUCOS <span class="neon-text">ICÓNICOS</span></h2>
+      </div>
+
+      <div class="bmx-tricks-list">
+
+        <div class="bmx-trick" data-animate="fade-right">
+          <div class="trick-num">—01</div>
+          <div class="trick-info">
+            <h3>BARSPIN</h3>
+            <p>Rotación de 360° del manubrio mientras el rider se mantiene en el aire. Base de combos.</p>
+          </div>
+          <div class="trick-level trick-level--beginner">Principiante</div>
+        </div>
+
+        <div class="bmx-trick" data-animate="fade-right" style="animation-delay:.1s">
+          <div class="trick-num">—02</div>
+          <div class="trick-info">
+            <h3>TAILWHIP</h3>
+            <p>El frame gira 360° alrededor del eje del tubo de dirección mientras el rider sostiene el manubrio.</p>
+          </div>
+          <div class="trick-level trick-level--intermediate">Intermedio</div>
+        </div>
+
+        <div class="bmx-trick" data-animate="fade-right" style="animation-delay:.2s">
+          <div class="trick-num">—03</div>
+          <div class="trick-info">
+            <h3>FLAIR</h3>
+            <p>Backflip combinado con rotación de 180°. Truco aerial que requiere gran impulso en rampa.</p>
+          </div>
+          <div class="trick-level trick-level--advanced">Avanzado</div>
+        </div>
+
+        <div class="bmx-trick" data-animate="fade-right" style="animation-delay:.3s">
+          <div class="trick-num">—04</div>
+          <div class="trick-info">
+            <h3>DOUBLE BARSPIN BACKFLIP</h3>
+            <p>Dos rotaciones de manubrio durante un backflip completo. Combo de élite mundial.</p>
+          </div>
+          <div class="trick-level trick-level--elite">Élite</div>
+        </div>
+
+        <div class="bmx-trick" data-animate="fade-right" style="animation-delay:.4s">
+          <div class="trick-num">—05</div>
+          <div class="trick-info">
+            <h3>360 TAILWHIP</h3>
+            <p>Spin de 360° del rider + tailwhip simultáneo. Referencia global de dificultad técnica.</p>
+          </div>
+          <div class="trick-level trick-level--elite">Élite</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CULTURA BMX
+  ============================================================ -->
+  <section class="bmx-section" id="bmx-culture">
+    <div class="container">
+      <div class="bmx-section-header" data-animate="fade-up">
+        <span class="bmx-section-badge">Más que un deporte</span>
+        <h2 class="bmx-section-title">LA <span class="neon-text">CULTURA</span></h2>
+      </div>
+
+      <div class="bmx-culture-grid">
+        <div class="bmx-culture-card" data-animate="fade-up">
+          <div class="culture-icon">🎨</div>
+          <h3>Arte y expresión</h3>
+          <p>El BMX es una forma de arte callejero. Cada combo es una firma personal, un lenguaje visual único.</p>
+        </div>
+        <div class="bmx-culture-card" data-animate="fade-up" style="animation-delay:.1s">
+          <div class="culture-icon">🤝</div>
+          <h3>Comunidad</h3>
+          <p>Los spots locales son puntos de encuentro. El BMX une personas sin importar edad, origen o nivel.</p>
+        </div>
+        <div class="bmx-culture-card" data-animate="fade-up" style="animation-delay:.2s">
+          <div class="culture-icon">🎵</div>
+          <h3>Música y estética</h3>
+          <p>Hip-hop, punk, metal, reggaeton — la cultura BMX absorbe todo y lo hace propio a través del estilo.</p>
+        </div>
+        <div class="bmx-culture-card" data-animate="fade-up" style="animation-delay:.3s">
+          <div class="culture-icon">📸</div>
+          <h3>Fotografía y video</h3>
+          <p>Documentar la sesión es parte de la cultura. Cada caída y cada truco logrado merecen ser recordados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EQUIPO BÁSICO
+  ============================================================ -->
+  <section class="bmx-section bmx-section--dark" id="bmx-equipment">
+    <div class="container">
+      <div class="bmx-section-header" data-animate="fade-up">
+        <span class="bmx-section-badge">Lo que necesitas</span>
+        <h2 class="bmx-section-title">EQUIPO <span class="neon-text">ESENCIAL</span></h2>
+      </div>
+
+      <div class="bmx-equipment-grid">
+
+        <div class="bmx-equip-item" data-animate="scale-in">
+          <div class="equip-icon">🚲</div>
+          <h3>La Bici</h3>
+          <p>Frame cromoly 4130, ruedas 20", geometría específica según disciplina (park, street, flatland).</p>
+        </div>
+
+        <div class="bmx-equip-item" data-animate="scale-in" style="animation-delay:.1s">
+          <div class="equip-icon">⛑️</div>
+          <h3>Casco</h3>
+          <p>Obligatorio siempre. Certificación ASTM/CE. Full-face para vert y dirt; medio para park y street.</p>
+        </div>
+
+        <div class="bmx-equip-item" data-animate="scale-in" style="animation-delay:.2s">
+          <div class="equip-icon">🦺</div>
+          <h3>Protecciones</h3>
+          <p>Rodilleras, coderas y muñequeras. Reducen drásticamente el riesgo de lesión en el aprendizaje.</p>
+        </div>
+
+        <div class="bmx-equip-item" data-animate="scale-in" style="animation-delay:.3s">
+          <div class="equip-icon">👟</div>
+          <h3>Calzado</h3>
+          <p>Suela plana con buen agarre. Marcas como Vans, DC o Nike SB son favoritas de la comunidad.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHATBOT BMX
+  ============================================================ -->
+  <button
+    class="chatbot-fab chatbot-fab--bmx"
+    id="chatbotFab"
+    aria-label="Abrir asistente BMX"
+    aria-expanded="false"
+    aria-controls="chatbotPanel"
+  >
+    <span class="chatbot-fab-icon">⬡</span>
+    <span class="chatbot-fab-label">Chat BMX</span>
+  </button>
+
+  <div class="chatbot-panel chatbot-panel--bmx" id="chatbotPanel" role="dialog" aria-label="Chatbot BMX" aria-modal="true" hidden>
+    <div class="chatbot-header">
+      <div class="chatbot-header-info">
+        <div class="chatbot-avatar" aria-hidden="true">⬡</div>
+        <div>
+          <strong>BMX Assistant</strong>
+          <span class="chatbot-status" id="chatbotStatus">En linea</span>
+        </div>
+      </div>
+      <button class="chatbot-close" id="chatbotClose" aria-label="Cerrar chatbot">✕</button>
+    </div>
+
+    <div class="chatbot-messages" id="chatbotMessages" role="log" aria-live="polite" aria-label="Conversacion">
+      <div class="chat-msg chat-msg--bot">
+        <div class="chat-bubble">
+          Hola, soy tu asistente BMX. Te ayudo con disciplinas, trucos y equipo esencial.
+        </div>
+      </div>
+    </div>
+
+    <div class="chatbot-typing" id="chatbotTyping" hidden aria-live="polite" aria-label="El asistente esta escribiendo">
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="chatbot-input-area">
+      <textarea
+        class="chatbot-input"
+        id="chatbotInput"
+        placeholder="Pregunta por ejemplo: que truco practicar primero"
+        rows="1"
+        aria-label="Escribe tu mensaje"
+        maxlength="300"
+      ></textarea>
+      <button class="chatbot-send" id="chatbotSend" aria-label="Enviar mensaje">➤</button>
+    </div>
+
+    <div class="chatbot-suggestions">
+      <button class="suggestion-chip" data-msg="Que disciplina BMX es olimpica">Disciplina olimpica</button>
+      <button class="suggestion-chip" data-msg="Cual es un truco para principiantes">Truco principiante</button>
+      <button class="suggestion-chip" data-msg="Que equipo necesito para empezar">Equipo basico</button>
+      <button class="suggestion-chip" data-msg="Que significa la cultura BMX">Cultura BMX</button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER BMX
+  ============================================================ -->
+  <footer class="footer footer--bmx" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon bmx-icon">⬡</span>
+            <span class="logo-text">BMX <strong>Freestyle</strong></span>
+          </a>
+          <p>Cultura, deporte y comunidad. BMX Freestyle Colombia.</p>
+          <p class="footer-creator">Creado por <strong>Cesar Estiven Gomez Hernandez</strong></p>
+        </div>
+        <div class="footer-links">
+          <h4>Secciones</h4>
+          <ul>
+            <li><a href="#bmx-home">Inicio</a></li>
+            <li><a href="#bmx-disciplines">Disciplinas</a></li>
+            <li><a href="#bmx-tricks">Trucos</a></li>
+            <li><a href="#bmx-culture">Cultura</a></li>
+            <li><a href="#bmx-equipment">Equipo</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Disciplinas</h4>
+          <ul>
+            <li><a href="#bmx-disciplines">Park</a></li>
+            <li><a href="#bmx-disciplines">Street</a></li>
+            <li><a href="#bmx-disciplines">Flatland</a></li>
+            <li><a href="#bmx-disciplines">Dirt</a></li>
+            <li><a href="#bmx-disciplines">Vert</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>BMX Colombia</h4>
+          <p>Sesiones, cultura y progresión técnica.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 BMX Freestyle Colombia · Cesar Estiven Gomez Hernandez</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
